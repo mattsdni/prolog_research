@@ -1,0 +1,37 @@
+body {
+    padding-top: 50px;
+}
+.starter-template {
+    padding: 40px 105px;
+    text-align: center;
+}
+.create-schedule {
+    text-align: left;
+    padding-top: 50px;
+    color: #265a88;
+}
+.schedule-style{
+    text-align: left;
+    padding-top: 50px;
+    color: #265a88;
+}
+.processing-sketch{
+    text-align:  left;
+    padding-top: 30px;
+}
+.logoicon{
+    padding-top: 100px;
+}
+.Absolute-Center {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.Absolute-Center.is-Responsive {
+    width: 50%;
+    height: 70%;
+    min-width: 200px;
+    max-width: 400px;
+    padding: 40px;
+}
