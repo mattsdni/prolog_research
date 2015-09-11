@@ -16,14 +16,11 @@
 
     <!-- Custom styles for this template -->
     <link href="css/starter-template.css" rel="stylesheet">
-    <link href="css/sticky-footer.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-
 </head>
 <body>
-
 <!--top menu bar-->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -58,35 +55,72 @@
     <div class="starter-template">
         <img class="center fit" src="img/prolog_logo.jpg" alt="Prolog Logo">
         <br>
-        <p class="lead">A high-level computer programming language first devised for artificial intelligence applications.</p>
+        <p class="lead">A high-level computer programming language first devised for 
+		artificial intelligence applications.</p>
     </div>
 
     <div class="page-header" id="development">
         <h1 style="padding-top: 60px; margin-top: -60px;">Development</h1>
     </div>
-    <p>This is some text.</p>
-    <p>This is another text.</p>
+	
+    <p>Conceived in the early 1970s by Alain Colmerauer and Phillipe Roussel at the 
+	University of Aix-Marseille.</p>
+	<p>Developed in 1972 in collaboration with Robert Kowalski from the University of Edinburgh</p>
+	<p>Kowalski contributed the theoretical framework while Colmerauer's research provided 
+	means to formalize the Prolog language</p>
+	<p>ISO Prolog standardization in 1995</p>
+	<br>
+	<p>Influenced by PLANNER - Designed by Carl Hewitt at MIT in 1969</p>
+	<p>Influenced Visual Prolog, Mercury, Oz, Erlang, Strand, KL0, KL1, Datalog, CHR, XSB</p>
+
 
     <div class="page-header" id="features">
         <h1 style="padding-top: 60px; margin-top: -60px;">Features</h1>
     </div>
-    <p>This is some text.</p>
-    <p>This is another text.</p>
+	<p>Program logic is expressed in terms of relations, and a computation is initiated by running a query over these relations. 
+	Relations are defined by clauses. Prolog's single data type is the term. Terms are either atoms, 
+	numbers, variables or compound terms.</p>
+	<br>
+	<p>An example of a fact is:</p>
+	
+	<pre>cat(tom).</pre>
+	<p>which is equivalent to the rule:</p>
+	<pre>cat(tom) :- true.</pre>
+	<p>Given the above fact, one can ask:</p>
+	<p>is tom a cat?</p>
+	<pre>?- cat(tom).
+Yes</pre>
+	<p>what things are cats?</p>
+	<pre>?- cat(X).
+X = tom</pre>
+	<p>Clauses with bodies are called rules. An example of a rule is:</p>
+	<pre>animal(X) :- cat(X).</pre>
+	<p>If we add that rule and ask what things are animals?</p>
+	<pre>?- animal(X).
+X = tom</pre>
 
     <div class="page-header" id="uses">
         <h1 style="padding-top: 60px; margin-top: -60px;">Uses</h1>
     </div>
-    <p>This is some text.</p>
-    <p>This is another text.</p>
+    <p>Prolog is a general purpose logic programming language associated with artificial 
+	intelligence and computational linguistics. Also good for database, symbolic mathematics, 
+	and language parsing.</p>
+	<p>Medical research</p>
+	<p>Online support services for customers</p>
+	<p>Build expert systems that solve complex problems without 
+	the help of humans (automatically planning, monitoring, 
+	controlling and troubleshooting complex systems</p>
+	<p>Build decision support systems that aid organizations in decision-making</p>
 
     <div class="page-header" id="examples">
         <h1 style="padding-top: 60px; margin-top: -60px;">Examples</h1>
     </div>
-    <p>This is some text.</p>
-    <p>This is another text.</p>
-
-
-
+    <p>IBM Watson programmed in Java, C++, and Prolog</p>
+	<p>NASA - Clarissa: Clarissa is a fully voice-operated procedure browser, enabling 
+	astronauts to be more efficient with their hands and eyes and to give full attention 
+	to the task while they navigate through the procedure using spoken commands.</p>
+	<br><br><br><br>
+	
 </div><!-- /.container -->
 
 <script type="text/javascript" language="JavaScript">
@@ -98,13 +132,6 @@
         set_body_height();
     });
 </script>
-
-<footer class="footer">
-    <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
-    </div>
-</footer>
-
 
 <!-- Bootstrap core JavaScript
   ================================================== -->
